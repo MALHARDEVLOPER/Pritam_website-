@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(5, 5, 5, 0.5); /* Transparent black background */
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: white;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #c19803;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker transparent black for navigation */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+nav h2 h{
+    color: #eb0a0a;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.fullscreen-video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+li a:hover {
+    color: lightgray;
+}
+
+.container {
+    background-image: url(picture/lap.png);
+    background-repeat: no-repeat;
+    float:inline-end;
+    mix-blend-mode: multiply;
+    width: 80%;
+    position:absolute;
+    left: 60%;  
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white;
+    z-index: 1;
+    background-size:1200px;
+    background-attachment: fixed; /* Ensure the background remains fixed as the user scrolls */
+    background-position: center top;
+}
+
+.section {
+    height: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-text{
+    text-align: left;
+}
+.welcome-text{
+    color: rgb(241, 236, 236);
+    font-size:70px;
+    margin-left:150px;
+    margin-top:180px;
+    font-family:"Fjalla One", sans-serif;
+    font-style:normal;
+       
+
+}
+
+
+
+.welcome-text {
+    font-size: 90px;
+    margin-top: 90px;
+    letter-spacing: 15px;
+    
+}
+
+@keyframes animateWelcome {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.welcome-text span {
+    display: inline-block;
+    opacity: 0.9;
+    animation: animateWelcome 5s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+
+/* .welcome-text span {
+    display: inline-block;
+    opacity: 0.9;
+    animation: animateWelcome 1.3s ease forwards;
+
+}
+
+@keyframes animateWelcome {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+.welcome-text span:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.welcome-text span:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.welcome-text span:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.welcome-text span:nth-child(4) {
+    animation-delay: 1.1s;
+}
+
+.welcome-text span:nth-child(5) {
+    animation-delay: 1.3s;
+}
+
+.welcome-text span:nth-child(6) {
+    animation-delay: 1.6s;
+}
+
+.welcome-text span:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+.welcome-text span {
+    background-image: linear-gradient(to right, #002D62,#00308F,#215e89,#54a1d4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+    
+.info {
+    
+    margin-top: 0px;
+    margin-left: 80px;
+}
+
+  .main{
+    /* margin-bottom: 10px; */
+    font-size: 45px;
+    margin-top: 19px;
+    letter-spacing: 4px;
+    font-family:"Fjalla One", sans-serif;
+    font-style: normal;
+    text-shadow: 2px,4px,2px;
+}
+
+span{
+    background-image: linear-gradient(#780a0a,#0b1c7d) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family:"Anton", sans-serif;
+    font-style:normal;
+    letter-spacing: 10px;
+}
+
+.int{
+    font-size: 26px;
+
+}
+.info {
+    background-color: rgba(100, 96, 96, 0.5); /* Transparent background */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+     padding: 20px; /*Add padding for spacing */ 
+    max-height: 200px; /* Set maximum height for scrollability */
+    max-width: 450px;
+    color: aliceblue; /* Text color */
+    font-size: 16px; /* Font size */
+    border-radius: 10px;
+}
+
+/* ----------about------------- */
+
+#about{
+    padding: 120px 0;
+    background-color: rgb(50, 48, 48);
+    margin-top: 170px;
+    position: relative;
+    
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+ .col1-about {
+    flex-basis: 35%;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+.col1-about img{
+    width: 90%;
+    border-radius: 15px;
+    mix-blend-mode: multiply;
+    position: relative; /* Set position to absolute */
+     /* Position at the left of the container  */
+     z-index: 2; 
+    opacity: 0.7;
+    margin-left: 50px;
+
+    border: none;
+} 
+
+.col2-about{
+    flex-basis: 60%;
+    background-color: rgba(69, 66, 66, 0.5); /* Transparent background */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    padding: 20px; /* Add padding for spacing */
+    max-height: 650px; /* Set maximum height for scrollability */
+    max-width: 1500px;
+    overflow-y:auto;
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: white;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #c19803;
+    }
+
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.col2-about {
+    animation: slideInRight 1s ease-in-out forwards;
+}
+.sub{
+    font-size: 60px;
+    color: aliceblue;
+     background-image: linear-gradient( 109.6deg,  rgba(255,179,189,1) 1.8%, rgba(254,248,154,1) 50.6%, rgba(161,224,186,1) 100.3% );
+     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+ .col2-about p{
+    color: aliceblue;
+ }
+ .tab{
+    display: flex;
+    margin: 20px 0 40px;
+ }
+
+ .tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+ }
+ .tab-link::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #c19803;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+ }
+
+ .tab-link.active::after{
+    width: 50%;
+
+ }
+ 
+ .tab-cont ul{
+    color: rgb(193, 224, 13);
+    /* list-style-type: circle; */
+    display: block;
+    
+ }
+  .tab-cont li{
+    color: #f9f8f3;
+    margin-left: 30px;
+    /* list-style-type: disc;    */
+    
+ }
+ .tab-cont ul li span{
+    color: #e6a20e;
+    letter-spacing: 2px;
+ }
+ 
+ .tab-cont{
+    display: none;
+ }
+.tab-cont.activ{
+    display: block;
+}
+
+/* ------------------------contact------------------------------- */
+
+.container3{
+    margin-top: 200px;
+    margin-bottom: 180px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    background-color: rgba(100, 97, 97, 0.5); /* Transparent background */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    padding: 20px; /* Add padding for spacing */
+    max-height: 450px;
+    max-width: 380px;
+    margin-left: 35px;
+    border-radius: 15px;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left h1{
+    margin-left: 30px;
+}
+.contact-left p{
+    margin-top: 30px;
+    color: #fff;
+}
+.contact-left p i{
+    color: rgb(221, 75, 75);
+    margin-left: 30px;
+    font-size: 25px;
+    margin-right: 10px;
+
+}
+
+.icons{
+    margin-top: 30px;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 30px;
+    color: #0e86dc;
+    display: inline-block;
+    transition: transform 0.5s;
+    
+}
+.icons n{
+    color: rgb(229, 89, 113);
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.5s;
+    
+}
+.icons n:hover{
+    color:rgb(141, 11, 32);
+    transform :translateY(-5px)
+}
+
+.icons a:hover{
+    color: #022752;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+}
+
+form input,form textarea{
+    width: 70%;
+    border: 0;
+    outline: none;
+    background-color: rgba(59, 56, 56, 0.5); 
+    padding:15px;
+    margin:15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+.btn{
+    display: inline-block;
+    background:rgb(65, 65, 144);
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    
+    
+}
+button{
+    color: #fff;
+    font-size: 20px;
+    
+}
